@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>눈이 있는 네모 움직이기</title>
+    <style>
+        #square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .eye {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            position: absolute;
+            top: 30px;
+            border-radius: 50%;
+            transition: left 0.1s, right 0.1s, top 0.1s;
+        }
+        #eye1 {
+            left: 20px;
+        }
+        #eye2 {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="square">
+        <div id="eye1" class="eye"></div>
+        <div id="eye2" class="eye"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
